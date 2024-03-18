@@ -2,6 +2,255 @@
 # 一、计算机科学与编程入门第一次作业
 ## 2100012285 骆静敏
 ## 1.中国地图、世界地图
-绘制中国地图，在图上标出我的家乡广东和学校所在地北京，箭头从广东指向北京，二者点的数值较大，表示每次开学时我一般选择的飞机航线；还有由广东——>上海——>北京，上海的点比较小，表示这条航线的选择的频次较低。这是该图的连接[from home to school](beifangluoye.github.io/from home to school_china.html)
+绘制中国地图，在图上标出我的家乡广东和学校所在地北京，箭头从广东指向北京，二者点的数值较大，表示每次开学时我一般选择的飞机航线；还有由广东——>上海——>北京，上海的点比较小，表示这条航线的选择的频次较低。这是该图的连接[from home to school](<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/maps/china.js"></script>
+
+</head>
+<body >
+    <div id="c5bfdb96ba48459e9835c2a9bae71d69" class="chart-container" style="width:900px; height:500px; "></div>
+    <script>
+        var chart_c5bfdb96ba48459e9835c2a9bae71d69 = echarts.init(
+            document.getElementById('c5bfdb96ba48459e9835c2a9bae71d69'), 'white', {renderer: 'canvas'});
+        var option_c5bfdb96ba48459e9835c2a9bae71d69 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "effectScatter",
+            "name": "from home to school",
+            "coordinateSystem": "geo",
+            "showEffectOn": "render",
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "\u5317\u4eac",
+                    "value": [
+                        116.407526,
+                        39.90403,
+                        50
+                    ]
+                },
+                {
+                    "name": "\u5e7f\u4e1c",
+                    "value": [
+                        113.26653,
+                        23.132191,
+                        40
+                    ]
+                },
+                {
+                    "name": "\u4e0a\u6d77",
+                    "value": [
+                        121.473701,
+                        31.230416,
+                        20
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "lines",
+            "coordinateSystem": "geo",
+            "zlevel": 3,
+            "progressive": 400,
+            "progressiveThreshold": 3000,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4,
+                "color": "blue",
+                "symbol": "arrow",
+                "symbolSize": 5
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "\u5e7f\u4e1c->\u5317\u4eac",
+                    "coords": [
+                        [
+                            113.26653,
+                            23.132191
+                        ],
+                        [
+                            116.407526,
+                            39.90403
+                        ]
+                    ]
+                },
+                {
+                    "name": "\u5e7f\u4e1c->\u4e0a\u6d77",
+                    "coords": [
+                        [
+                            113.26653,
+                            23.132191
+                        ],
+                        [
+                            121.473701,
+                            31.230416
+                        ]
+                    ]
+                },
+                {
+                    "name": "\u4e0a\u6d77->\u5317\u4eac",
+                    "coords": [
+                        [
+                            121.473701,
+                            31.230416
+                        ],
+                        [
+                            116.407526,
+                            39.90403
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0.2,
+                "type": "solid"
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "from home to school",
+                ""
+            ],
+            "selected": {},
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "formatter": function (params) {        return params.name + ' : ' + params.value[2];    },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "title": [
+        {
+            "show": true,
+            "text": "china",
+            "target": "blank",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ],
+    "visualMap": {
+        "show": true,
+        "type": "continuous",
+        "min": 0,
+        "max": 100,
+        "inRange": {
+            "color": [
+                "#50a3ba",
+                "#eac763",
+                "#d94e5d"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "hoverLink": true,
+        "orient": "vertical",
+        "padding": 5,
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 140,
+        "borderWidth": 0
+    },
+    "geo": {
+        "map": "china",
+        "roam": true,
+        "aspectScale": 0.75,
+        "nameProperty": "name",
+        "selectedMode": false,
+        "emphasis": {}
+    }
+};
+        chart_c5bfdb96ba48459e9835c2a9bae71d69.setOption(option_c5bfdb96ba48459e9835c2a9bae71d69);
+    </script>
+</body>
+</html>)
 ## 2.组合图表
 ## 3.词频统计图
